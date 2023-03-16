@@ -39,7 +39,12 @@
       <div class="col-md-5">
         <h4 style="margin-top: 20px;">Mars Facts</h4>
         <div class="display2" style="width: auto; background-color: #ffffff; margin-right: 30px;  margin-top: 10px; overflow-y: auto;">
-          {{mars_info.html_table}}
+          <!-- {{mars_info.html_table}} -->
+          <table class="dataframe" >
+            <tbody>
+                {{mars_info.html_table | safe}}
+            </tbody>
+          </table>
         </div>
       </div>
 

@@ -1,1 +1,2 @@
 # nosql-challenge
+For this project, I built a web application that scraped multiple websites for data related to "Mission to Mars" then displays all this information on a single html page. I used Jupyter Notebook, BeautifulSoup, Pandas, Requests/Splinter, MongoDB, and Flask to accomplish this. Once done, I had a webpage that would scrape the websites and repopulate the images, text, and table(although in this case the table facts remained constant) with the newest information.

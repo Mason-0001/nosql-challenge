@@ -95,15 +95,13 @@ def scrape():
 
     table1_df = tables[0]
     table1_df
-
-
+    table1_df = tables[0]
+    table1_df = table1_df.rename(columns={0: 'Description'})
+    table1_df = table1_df.set_index('Description')
     # In[56]:
 
-
-    html_table = table1_df.to_html()
-    html_table
-
-
+    html_table = table1_df.to_html(header=False)
+    html_table = html_table.replace('<table', '<table style="height: 500px; width: 95%; white-space: normal; text-align: center;"')
 
     # In[43]:
 
@@ -206,7 +204,8 @@ def scrape():
         "news_text": news_p, 
         "featured_image": featured_image_url, 
         "html_table": html_table, 
-        "mars_maps": mars_maps 
+        "mars_maps": mars_maps,
+        "mars_m_title": title_v 
     }
     return mars_data
 

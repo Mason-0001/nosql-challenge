@@ -22,7 +22,7 @@ def scraper():
     # mars_info = mongo.db.mars_info
     # call the scrape function in our scrape_mars file. This will scrape and save to mongo.
     mars_data = scrape_mars.scrape()
-    print(mars_data)
+    
     #mars_data_dict = json.loads(json.dumps(mars_data))
    
     # update our mars_info with the data that is being scraped.
